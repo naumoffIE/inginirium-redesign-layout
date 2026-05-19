@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Летний инженерный лагерь — Инжинириум МГТУ им. Н.Э. Баумана</title>
+  <meta name="description" content="Летний инженерный лагерь Инжинириум 2025 — интенсивные смены по робототехнике, программированию и 3D-технологиям для детей 7–17 лет при МГТУ Баумана." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/summer-camp.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER (идентичен главной)
+  ═══════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo" aria-label="На главную">
+        <span class="logo-badge">И</span>
+        <span class="logo-text">
+          <strong>Инжинириум</strong>
+          <span>МГТУ им. Н.Э. Баумана</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="index.html#courses" class="nav-link">Курсы</a></li>
+          <li><a href="summer-camp.html" class="nav-link active" aria-current="page">Летний лагерь</a></li>
+          <li><a href="index.html#advantages" class="nav-link">О нас</a></li>
+          <li><a href="index.html#footer" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary" id="headerCta" aria-haspopup="dialog">
+          Записаться
+        </button>
+        <button class="burger" id="burgerBtn" aria-label="Открыть меню"
+                aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul class="mobile-nav-list" role="list">
+        <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+        <li><a href="index.html#courses" class="mobile-nav-link">Курсы</a></li>
+        <li><a href="summer-camp.html" class="mobile-nav-link active">Летний лагерь</a></li>
+        <li><a href="index.html#advantages" class="mobile-nav-link">О нас</a></li>
+        <li><a href="index.html#footer" class="mobile-nav-link">Контакты</a></li>
+        <li>
+          <button class="btn btn-primary btn-full" id="mobileCta" aria-haspopup="dialog">
+            Записаться в лагерь
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN
+  ═══════════════════════════════════════════ -->
+  <main id="mainContent">
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 1 — Hero лагеря
+    ─────────────────────────────────────────── -->
+    <section class="camp-hero" aria-labelledby="campHeroTitle">
+      <div class="camp-hero-bg" aria-hidden="true">
+        <div class="camp-hero-shape camp-hero-shape--1"></div>
+        <div class="camp-hero-shape camp-hero-shape--2"></div>
+        <div class="camp-hero-dots"></div>
+      </div>
+
+      <div class="container camp-hero-inner">
+        <div class="camp-hero-content">
+          <span class="hero-eyebrow">🏕️ Летний инженерный лагерь 2025</span>
+          <h1 class="hero-title camp-hero-title" id="campHeroTitle">
+            Лето в Бауманке —<br />
+            <mark>незабываемые</mark><br />
+            открытия
+          </h1>
+          <p class="hero-desc">
+            Интенсивные инженерные смены для детей 7–17 лет. Роботы,
+            программирование, 3D-печать — и настоящая дружба среди
+            единомышленников. Июль и август, очно на территории МГТУ.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-lg" id="heroCta" aria-haspopup="dialog">
+              🏕️ Записаться в лагерь
+            </button>
+            <a href="#shifts" class="btn btn-outline btn-lg">
+              Смотреть смены ↓
+            </a>
+          </div>
+        </div>
+
+        <div class="camp-hero-dates" aria-label="Даты смен">
+          <div class="dates-card">
+            <div class="dates-card__title">Смены 2025</div>
+            <div class="dates-item">
+              <span class="dates-badge">1</span>
+              <span class="dates-period">1–14 июля</span>
+            </div>
+            <div class="dates-item">
+              <span class="dates-badge">2</span>
+              <span class="dates-period">15–28 июля</span>
+            </div>
+            <div class="dates-item">
+              <span class="dates-badge">3</span>
+              <span class="dates-period">1–14 августа</span>
+            </div>
+            <div class="dates-item">
+              <span class="dates-badge">4</span>
+              <span class="dates-period">15–28 августа</span>
+            </div>
+            <div class="dates-note">
+              <span>⚡</span> Осталось мало мест
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Волна вниз -->
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F8F9FA"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 2 — Краткие факты (бэйджи)
+    ─────────────────────────────────────────── -->
+    <section class="camp-facts" aria-label="Краткие факты о лагере">
+      <div class="container">
+        <div class="facts-row">
+          <div class="fact-badge reveal-card">
+            <span class="fact-icon" aria-hidden="true">📅</span>
+            <div class="fact-body">
+              <span class="fact-num">14 дней</span>
+              <span class="fact-label">каждая смена</span>
+            </div>
+          </div>
+          <div class="fact-badge reveal-card">
+            <span class="fact-icon" aria-hidden="true">👦</span>
+            <div class="fact-body">
+              <span class="fact-num">7–17 лет</span>
+              <span class="fact-label">возраст участников</span>
+            </div>
+          </div>
+          <div class="fact-badge reveal-card">
+            <span class="fact-icon" aria-hidden="true">👥</span>
+            <div class="fact-body">
+              <span class="fact-num">до 12 чел.</span>
+              <span class="fact-label">в группе</span>
+            </div>
+          </div>
+          <div class="fact-badge reveal-card">
+            <span class="fact-icon" aria-hidden="true">🏛️</span>
+            <div class="fact-body">
+              <span class="fact-num">МГТУ</span>
+              <span class="fact-label">территория Бауманки</span>
+            </div>
+          </div>
+          <div class="fact-badge reveal-card">
+            <span class="fact-icon" aria-hidden="true">📜</span>
+            <div class="fact-body">
+              <span class="fact-num">Сертификат</span>
+              <span class="fact-label">по итогам смены</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 3 — Программы смен (сетка карточек)
+    ─────────────────────────────────────────── -->
+    <section class="shifts" id="shifts" aria-labelledby="shiftsTitle">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Программы смен</span>
+          <h2 class="section-title" id="shiftsTitle">Выберите свою смену</h2>
+          <p class="section-desc">
+            Каждая смена посвящена отдельному направлению инженерии.
+            Уровень — от начинающих до продвинутых.
+          </p>
+        </header>
+
+        <div class="shifts-grid">
+
+          <!-- Смена 1: Робототехника -->
+          <article class="shift-card reveal-card" aria-labelledby="shift-1-title">
+            <div class="shift-card__header shift-card__header--yellow">
+              <span class="shift-number" aria-label="Смена номер 1">Смена 1</span>
+              <span class="shift-icon" aria-hidden="true">🤖</span>
+            </div>
+            <div class="shift-card__body">
+              <h3 class="shift-title" id="shift-1-title">Роботы и мехатроника</h3>
+              <p class="shift-dates">
+                <span class="dates-label">📅 Даты:</span>
+                1–14 июля 2025
+              </p>
+              <p class="shift-age">
+                <span class="dates-label">👤 Возраст:</span>
+                9–14 лет
+              </p>
+              <p class="shift-desc">
+                Собираем и программируем роботов на Arduino и LEGO. Учимся
+                работать с сенсорами, моторами и логикой движения. Финал —
+                соревнование роботов внутри смены.
+              </p>
+              <ul class="shift-program" aria-label="Программа смены">
+                <li>Основы механики и конструирования</li>
+                <li>Программирование на Scratch/Python</li>
+                <li>Работа с датчиками и сервоприводами</li>
+                <li>Проектная работа в командах</li>
+                <li>Финальное соревнование роботов</li>
+              </ul>
+            </div>
+            <div class="shift-card__footer">
+              <div class="shift-price">
+                <span class="price-amount">28 000 ₽</span>
+                <span class="price-period">/ смена</span>
+              </div>
+              <button class="btn btn-primary" aria-haspopup="dialog"
+                      data-course="Смена 1 — Роботы и мехатроника">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <!-- Смена 2: Программирование -->
+          <article class="shift-card reveal-card" aria-labelledby="shift-2-title">
+            <div class="shift-card__header shift-card__header--dark">
+              <span class="shift-number" aria-label="Смена номер 2">Смена 2</span>
+              <span class="shift-icon" aria-hidden="true">💻</span>
+            </div>
+            <div class="shift-card__body">
+              <h3 class="shift-title" id="shift-2-title">Программирование и разработка</h3>
+              <p class="shift-dates">
+                <span class="dates-label">📅 Даты:</span>
+                15–28 июля 2025
+              </p>
+              <p class="shift-age">
+                <span class="dates-label">👤 Возраст:</span>
+                11–17 лет
+              </p>
+              <p class="shift-desc">
+                От Scratch до Python и JavaScript. Каждый создаёт собственный
+                проект — игру, приложение или сайт — и представляет его
+                на демо-дне в конце смены.
+              </p>
+              <ul class="shift-program" aria-label="Программа смены">
+                <li>Алгоритмическое мышление</li>
+                <li>Python: основы, функции, файлы</li>
+                <li>Основы веб-разработки (HTML/CSS/JS)</li>
+                <li>Работа с API и данными</li>
+                <li>Демо-день: презентация проектов</li>
+              </ul>
+            </div>
+            <div class="shift-card__footer">
+              <div class="shift-price">
+                <span class="price-amount">26 000 ₽</span>
+                <span class="price-period">/ смена</span>
+              </div>
+              <button class="btn btn-primary" aria-haspopup="dialog"
+                      data-course="Смена 2 — Программирование и разработка">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <!-- Смена 3: 3D-технологии -->
+          <article class="shift-card reveal-card" aria-labelledby="shift-3-title">
+            <div class="shift-card__header shift-card__header--yellow">
+              <span class="shift-number" aria-label="Смена номер 3">Смена 3</span>
+              <span class="shift-icon" aria-hidden="true">🖨️</span>
+            </div>
+            <div class="shift-card__body">
+              <h3 class="shift-title" id="shift-3-title">3D-технологии и дизайн</h3>
+              <p class="shift-dates">
+                <span class="dates-label">📅 Даты:</span>
+                1–14 августа 2025
+              </p>
+              <p class="shift-age">
+                <span class="dates-label">👤 Возраст:</span>
+                10–16 лет
+              </p>
+              <p class="shift-desc">
+                Проектируем в Tinkercad и Fusion 360, печатаем на профессиональных
+                3D-принтерах. Каждый участник уходит с готовым изделием,
+                созданным своими руками.
+              </p>
+              <ul class="shift-program" aria-label="Программа смены">
+                <li>Основы 3D-моделирования в Tinkercad</li>
+                <li>Продвинутое моделирование в Fusion 360</li>
+                <li>Настройка и работа с 3D-принтерами</li>
+                <li>Элементы промышленного дизайна</li>
+                <li>Создание финального изделия</li>
+              </ul>
+            </div>
+            <div class="shift-card__footer">
+              <div class="shift-price">
+                <span class="price-amount">27 000 ₽</span>
+                <span class="price-period">/ смена</span>
+              </div>
+              <button class="btn btn-primary" aria-haspopup="dialog"
+                      data-course="Смена 3 — 3D-технологии и дизайн">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <!-- Смена 4: Инженерный проект -->
+          <article class="shift-card reveal-card" aria-labelledby="shift-4-title">
+            <div class="shift-card__header shift-card__header--dark">
+              <span class="shift-number" aria-label="Смена номер 4">Смена 4</span>
+              <span class="shift-icon" aria-hidden="true">⚙️</span>
+            </div>
+            <div class="shift-card__body">
+              <h3 class="shift-title" id="shift-4-title">Инженерный проект — продвинутый</h3>
+              <p class="shift-dates">
+                <span class="dates-label">📅 Даты:</span>
+                15–28 августа 2025
+              </p>
+              <p class="shift-age">
+                <span class="dates-label">👤 Возраст:</span>
+                13–17 лет
+              </p>
+              <p class="shift-desc">
+                Комплексная смена для тех, кто хочет создать настоящий
+                инженерный проект: механика + электроника + программирование.
+                Финал — защита проектов перед жюри из преподавателей МГТУ.
+              </p>
+              <ul class="shift-program" aria-label="Программа смены">
+                <li>Постановка инженерной задачи</li>
+                <li>Проектирование и прототипирование</li>
+                <li>Электронные схемы и Arduino</li>
+                <li>Программирование устройства</li>
+                <li>Защита проекта перед жюри МГТУ</li>
+              </ul>
+            </div>
+            <div class="shift-card__footer">
+              <div class="shift-price">
+                <span class="price-amount">32 000 ₽</span>
+                <span class="price-period">/ смена</span>
+              </div>
+              <button class="btn btn-primary" aria-haspopup="dialog"
+                      data-course="Смена 4 — Инженерный проект">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+        </div><!-- /shifts-grid -->
+
+        <!-- Floating CTA -->
+        <div class="shifts-cta">
+          <p class="shifts-cta-text">
+            Не знаете, какую смену выбрать?
+          </p>
+          <button class="btn btn-primary btn-lg" id="consultCta" aria-haspopup="dialog">
+            Получить консультацию бесплатно
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 4 — Расписание / Как проходит день
+    ─────────────────────────────────────────── -->
+    <section class="daily-schedule" id="schedule" aria-labelledby="scheduleTitle">
+      <div class="container">
+        <header class="section-header section-header--light">
+          <span class="section-eyebrow section-eyebrow--light">Режим дня</span>
+          <h2 class="section-title section-title--light" id="scheduleTitle">
+            Как проходит день в лагере
+          </h2>
+        </header>
+
+        <ol class="schedule-timeline" aria-label="Распорядок дня">
+          <li class="timeline-item reveal-card">
+            <div class="timeline-time">09:00</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Сбор и разминка</h3>
+              <p class="timeline-desc">Лёгкая зарядка, приветствие группы, план на день.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal-card">
+            <div class="timeline-time">09:30</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Теоретическое занятие</h3>
+              <p class="timeline-desc">Новая тема смены, мини-лекция с демонстрациями.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal-card">
+            <div class="timeline-time">11:00</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Практическая работа</h3>
+              <p class="timeline-desc">Основной блок: эксперименты, сборка, программирование в командах.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal-card">
+            <div class="timeline-time">13:00</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Обед и отдых</h3>
+              <p class="timeline-desc">Перерыв в кафе МГТУ, свободное общение.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal-card">
+            <div class="timeline-time">14:00</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Проектная сессия</h3>
+              <p class="timeline-desc">Работа над командным проектом, наставник помогает решать задачи.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal-card">
+            <div class="timeline-time">16:00</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Итоги дня + квиз</h3>
+              <p class="timeline-desc">Разбираем результаты, технический квиз или мини-соревнование.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal-card">
+            <div class="timeline-time">17:00</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Завершение дня</h3>
+              <p class="timeline-desc">Подведение итогов, задание на завтра, встреча с родителями.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 5 — FAQ
+    ─────────────────────────────────────────── -->
+    <section class="faq" id="faq" aria-labelledby="faqTitle">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Вопросы и ответы</span>
+          <h2 class="section-title" id="faqTitle">Часто спрашивают</h2>
+        </header>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item reveal-card" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1"
+                    id="faq-btn-1">
+              <span>Нужна ли предварительная подготовка?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" aria-labelledby="faq-btn-1" hidden>
+              <p>
+                Нет, каждая смена начинается с нуля. Мы делим участников на
+                группы по возрасту и уровню подготовки, поэтому и новичкам,
+                и тем, кто уже занимался, будет интересно.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-card" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2"
+                    id="faq-btn-2">
+              <span>Нужно ли привозить ноутбук или оборудование?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" aria-labelledby="faq-btn-2" hidden>
+              <p>
+                Нет. Всё оборудование — роботы, 3D-принтеры, компьютеры,
+                электронные компоненты — предоставляет технопарк. Ребёнку
+                достаточно прийти с хорошим настроением.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-card" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3"
+                    id="faq-btn-3">
+              <span>Это дневной лагерь или с проживанием?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" aria-labelledby="faq-btn-3" hidden>
+              <p>
+                Лагерь дневной: с 9:00 до 17:00 на территории МГТУ. Проживание
+                не предусмотрено, но мы можем помочь с рекомендациями по
+                жилью для иногородних семей.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-card" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4"
+                    id="faq-btn-4">
+              <span>Можно записаться на несколько смен подряд?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" aria-labelledby="faq-btn-4" hidden>
+              <p>
+                Да, и это отличный вариант! При записи на 2 смены и более
+                действует скидка 10%. Каждая смена посвящена своему направлению,
+                поэтому программы не повторяются.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-card" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5"
+                    id="faq-btn-5">
+              <span>Как происходит оплата? Есть ли рассрочка?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" aria-labelledby="faq-btn-5" hidden>
+              <p>
+                Оплата онлайн или по счёту организации. Рассрочка доступна:
+                50% при записи, 50% — за 5 дней до начала смены. Принимаем
+                сертификаты Пушкинской карты и налоговый вычет на образование.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-card" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6"
+                    id="faq-btn-6">
+              <span>Что получит ребёнок по итогам смены?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-6" aria-labelledby="faq-btn-6" hidden>
+              <p>
+                Сертификат детского технопарка «Инжинириум МГТУ им. Н.Э. Баумана»,
+                реальный проект (робот, программа или изделие), фото и видео
+                с лагеря, а главное — новые знания и друзья-единомышленники.
+              </p>
+            </div>
+          </div>
+
+        </div><!-- /faq-list -->
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 6 — Финальный CTA
+    ─────────────────────────────────────────── -->
+    <section class="camp-final-cta" aria-labelledby="finalCtaTitle">
+      <div class="container camp-final-cta-inner">
+        <div class="camp-final-cta-content">
+          <h2 class="camp-final-cta-title" id="finalCtaTitle">
+            Осталось мало мест —<br />успейте записаться!
+          </h2>
+          <p class="camp-final-cta-desc">
+            Смены заполняются быстро. Оставьте заявку сейчас, и мы зарезервируем
+            место за вашим ребёнком.
+          </p>
+          <div class="camp-final-cta-actions">
+            <button class="btn btn-primary btn-lg" id="finalCtaBtn" aria-haspopup="dialog">
+              🏕️ Записаться в лагерь
+            </button>
+            <a href="tel:+74951234567" class="btn btn-outline btn-lg btn-light">
+              📞 Позвонить нам
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER (идентичен главной)
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="Инжинириум — на главную">
+          <span class="logo-badge">И</span>
+          <span class="logo-text">
+            <strong>Инжинириум</strong>
+            <span>МГТУ им. Н.Э. Баумана</span>
+          </span>
+        </a>
+        <p class="footer-tagline">
+          Детский технопарк, где инженерия становится профессией мечты.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-title">Обучение</h3>
+          <ul role="list">
+            <li><a href="index.html#courses">Все курсы</a></li>
+            <li><a href="index.html#directions">Робототехника</a></li>
+            <li><a href="index.html#directions">Программирование</a></li>
+            <li><a href="index.html#directions">3D-моделирование</a></li>
+            <li><a href="summer-camp.html">Летний лагерь</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-title">О нас</h3>
+          <ul role="list">
+            <li><a href="index.html#advantages">Преимущества</a></li>
+            <li><a href="#">Педагоги</a></li>
+            <li><a href="#">Наши достижения</a></li>
+            <li><a href="#">Партнёры</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-title">Контакты</h3>
+          <address class="footer-contacts">
+            <p>
+              <span aria-label="Адрес">📍</span>
+              Москва, ул. 2-я Бауманская, д.&nbsp;5, стр.&nbsp;1, МГТУ
+            </p>
+            <p>
+              <a href="tel:+74951234567">
+                <span aria-label="Телефон">📞</span>
+                +7 (495) 123-45-67
+              </a>
+            </p>
+            <p>
+              <a href="mailto:info@injinerium.ru">
+                <span aria-label="Email">✉️</span>
+                info@injinerium.ru
+              </a>
+            </p>
+          </address>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">
+          &copy; 2025 Детский технопарк «Инжинириум МГТУ им. Н.Э. Баумана». Все права защищены.
+        </p>
+        <nav class="footer-legal" aria-label="Правовые ссылки">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Оферта</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       МОДАЛЬНОЕ ОКНО — Запись в лагерь
+  ═══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true"
+       aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-window">
+      <button class="modal-close" id="modalClose" aria-label="Закрыть окно">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M2 2L18 18M18 2L2 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="modal-eyebrow">🏕️ Летний лагерь 2025</span>
+        <h2 class="modal-title" id="modalTitle">Записаться в лагерь</h2>
+        <p class="modal-desc">
+          Оставьте заявку — мы свяжемся в течение одного рабочего дня
+          и забронируем место на выбранную смену.
+        </p>
+      </div>
+
+      <form class="modal-form" id="enrollForm" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="parentName">Имя родителя <span aria-hidden="true">*</span></label>
+          <input class="form-input" type="text" id="parentName" name="parentName"
+                 placeholder="Иван Иванов" required autocomplete="name" />
+          <span class="form-error" id="parentNameError" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="childName">Имя ребёнка <span aria-hidden="true">*</span></label>
+          <input class="form-input" type="text" id="childName" name="childName"
+                 placeholder="Алёша" required />
+          <span class="form-error" id="childNameError" role="alert"></span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="childAge">Возраст ребёнка <span aria-hidden="true">*</span></label>
+            <select class="form-input form-select" id="childAge" name="childAge" required>
+              <option value="" disabled selected>Выберите</option>
+              <option value="7">7 лет</option>
+              <option value="8">8 лет</option>
+              <option value="9">9 лет</option>
+              <option value="10">10 лет</option>
+              <option value="11">11 лет</option>
+              <option value="12">12 лет</option>
+              <option value="13">13 лет</option>
+              <option value="14">14 лет</option>
+              <option value="15">15 лет</option>
+              <option value="16">16 лет</option>
+              <option value="17">17 лет</option>
+            </select>
+            <span class="form-error" id="childAgeError" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="shiftSelect">Смена</label>
+            <select class="form-input form-select" id="shiftSelect" name="shiftSelect">
+              <option value="" disabled selected>Выберите</option>
+              <option value="shift1">Смена 1 — Робототехника (1–14 июля)</option>
+              <option value="shift2">Смена 2 — Программирование (15–28 июля)</option>
+              <option value="shift3">Смена 3 — 3D-технологии (1–14 августа)</option>
+              <option value="shift4">Смена 4 — Инженерный проект (15–28 августа)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="phoneNumber">Телефон <span aria-hidden="true">*</span></label>
+          <input class="form-input" type="tel" id="phoneNumber" name="phoneNumber"
+                 placeholder="+7 (999) 000-00-00" required autocomplete="tel" />
+          <span class="form-error" id="phoneError" role="alert"></span>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" id="privacyCheck" name="privacyCheck" required />
+          <label for="privacyCheck">
+            Даю согласие на <a href="#">обработку персональных данных</a>
+          </label>
+          <span class="form-error" id="privacyError" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full btn-lg">
+          Отправить заявку
+        </button>
+      </form>
+
+      <div class="modal-success" id="modalSuccess" hidden>
+        <div class="success-icon" aria-hidden="true">✅</div>
+        <h3 class="success-title">Заявка принята!</h3>
+        <p class="success-desc">
+          Спасибо! Наш менеджер свяжется с вами в течение одного рабочего дня
+          и подтвердит бронирование места.
+        </p>
+        <button class="btn btn-outline" id="successClose">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="js/global.js"></script>
+  <script src="js/summer-camp.js"></script>
+</body>
+</html>

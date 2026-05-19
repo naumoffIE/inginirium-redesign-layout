@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Инжинириум МГТУ им. Н.Э. Баумана — Детский технопарк (Редизайн)</title>
+  <meta name="description" content="Детский технопарк Инжинириум при МГТУ им. Н.Э. Баумана — программы по робототехнике, программированию и 3D-моделированию для детей и подростков." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER — фиксированная шапка
+  ═══════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <!-- Логотип -->
+      <a href="index.html" class="header-logo" aria-label="На главную">
+        <span class="logo-badge">И</span>
+        <span class="logo-text">
+          <strong>Инжинириум</strong>
+          <span>МГТУ им. Н.Э. Баумана</span>
+        </span>
+      </a>
+
+      <!-- Навигация -->
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Главная</a></li>
+          <li><a href="#courses" class="nav-link">Курсы</a></li>
+          <li><a href="summer-camp.html" class="nav-link">Летний лагерь</a></li>
+          <li><a href="#advantages" class="nav-link">О нас</a></li>
+          <li><a href="#footer" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA + бургер -->
+      <div class="header-actions">
+        <button class="btn btn-primary" id="headerCta" aria-haspopup="dialog">
+          Записаться
+        </button>
+        <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Мобильное меню -->
+    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul class="mobile-nav-list" role="list">
+        <li><a href="index.html" class="mobile-nav-link active">Главная</a></li>
+        <li><a href="#courses" class="mobile-nav-link">Курсы</a></li>
+        <li><a href="summer-camp.html" class="mobile-nav-link">Летний лагерь</a></li>
+        <li><a href="#advantages" class="mobile-nav-link">О нас</a></li>
+        <li><a href="#footer" class="mobile-nav-link">Контакты</a></li>
+        <li>
+          <button class="btn btn-primary btn-full" id="mobileCta" aria-haspopup="dialog">
+            Записаться на курс
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main id="mainContent">
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 1 — Hero / Главный баннер
+    ─────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-bg-decor" aria-hidden="true">
+        <div class="hero-gear hero-gear--1"></div>
+        <div class="hero-gear hero-gear--2"></div>
+        <div class="hero-dot-grid"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="hero-eyebrow">Детский технопарк при МГТУ им. Н.Э. Баумана</span>
+          <h1 class="hero-title" id="heroTitle">
+            Технологии —<br />
+            <mark>твой язык</mark><br />
+            будущего
+          </h1>
+          <p class="hero-desc">
+            Робототехника, программирование, 3D-моделирование и инженерия —
+            курсы для детей и подростков от&nbsp;7 до&nbsp;17 лет в&nbsp;сердце Бауманки.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-lg" id="heroCta" aria-haspopup="dialog">
+              Записаться на курс
+            </button>
+            <a href="#courses" class="btn btn-outline btn-lg">
+              Смотреть программы
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">2&thinsp;000<sup>+</sup></span>
+              <span class="stat-label">учеников в год</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num">40<sup>+</sup></span>
+              <span class="stat-label">программ обучения</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num">7</span>
+              <span class="stat-label">лет опыта</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card-float hero-card-float--1">
+            <span class="hcf-icon">🤖</span>
+            <span class="hcf-text">Робототехника</span>
+          </div>
+          <div class="hero-badge-ring">
+            <div class="hero-badge-ring__inner">
+              <span class="hero-badge-emoji">⚙️</span>
+            </div>
+          </div>
+          <div class="hero-card-float hero-card-float--2">
+            <span class="hcf-icon">💻</span>
+            <span class="hcf-text">Программирование</span>
+          </div>
+          <div class="hero-card-float hero-card-float--3">
+            <span class="hcf-icon">🎨</span>
+            <span class="hcf-text">3D-моделирование</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Волна-переход -->
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F8F9FA"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 2 — Направления (Tab-switcher)
+    ─────────────────────────────────────────── -->
+    <section class="directions" id="directions" aria-labelledby="directionsTitle">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Наши направления</span>
+          <h2 class="section-title" id="directionsTitle">Чему мы учим</h2>
+          <p class="section-desc">Выберите направление, чтобы узнать подробнее о программах</p>
+        </header>
+
+        <!-- Таб-переключатель -->
+        <div class="tabs" role="tablist" aria-label="Направления обучения">
+          <button class="tab-btn active" role="tab" aria-selected="true"
+                  aria-controls="tab-robotics" id="btn-robotics" data-tab="robotics">
+            <span class="tab-icon">🤖</span>
+            Робототехника
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false"
+                  aria-controls="tab-coding" id="btn-coding" data-tab="coding">
+            <span class="tab-icon">💻</span>
+            Программирование
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false"
+                  aria-controls="tab-3d" id="btn-3d" data-tab="3d">
+            <span class="tab-icon">🎨</span>
+            3D-моделирование
+          </button>
+        </div>
+
+        <!-- Таб-контент: Робототехника -->
+        <div class="tab-panel active" role="tabpanel" id="tab-robotics"
+             aria-labelledby="btn-robotics" tabindex="0">
+          <div class="tab-content-grid">
+            <div class="tab-info">
+              <h3 class="tab-content-title">Робототехника и мехатроника</h3>
+              <p class="tab-content-desc">
+                Дети проектируют, собирают и программируют роботов — от простых
+                механизмов до автономных машин. Используем наборы LEGO Mindstorms,
+                Arduino и собственные платформы МГТУ.
+              </p>
+              <ul class="tab-features" role="list">
+                <li>Проектирование механических систем</li>
+                <li>Программирование микроконтроллеров</li>
+                <li>Участие в соревнованиях WRO и RoboCup</li>
+                <li>Возраст: 7–17 лет</li>
+              </ul>
+              <a href="#courses" class="btn btn-primary">Смотреть курсы →</a>
+            </div>
+            <div class="tab-illustration tab-illustration--robotics" aria-hidden="true">
+              <div class="tab-illus-card">
+                <div class="tab-illus-icon">🤖</div>
+                <div class="tab-illus-lines">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Таб-контент: Программирование -->
+        <div class="tab-panel" role="tabpanel" id="tab-coding"
+             aria-labelledby="btn-coding" tabindex="0" hidden>
+          <div class="tab-content-grid">
+            <div class="tab-info">
+              <h3 class="tab-content-title">Программирование и разработка</h3>
+              <p class="tab-content-desc">
+                От Scratch для малышей до Python, JavaScript и создания мобильных
+                приложений для старших. Каждый ученик уходит с реальным проектом
+                в портфолио.
+              </p>
+              <ul class="tab-features" role="list">
+                <li>Scratch / Blockly для начинающих (7–10 лет)</li>
+                <li>Python и основы алгоритмов (11–14 лет)</li>
+                <li>Web-разработка и приложения (14–17 лет)</li>
+                <li>Работа над реальными проектами</li>
+              </ul>
+              <a href="#courses" class="btn btn-primary">Смотреть курсы →</a>
+            </div>
+            <div class="tab-illustration tab-illustration--coding" aria-hidden="true">
+              <div class="tab-illus-card">
+                <div class="tab-illus-icon">💻</div>
+                <div class="tab-illus-lines">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Таб-контент: 3D-моделирование -->
+        <div class="tab-panel" role="tabpanel" id="tab-3d"
+             aria-labelledby="btn-3d" tabindex="0" hidden>
+          <div class="tab-content-grid">
+            <div class="tab-info">
+              <h3 class="tab-content-title">3D-моделирование и дизайн</h3>
+              <p class="tab-content-desc">
+                Дети создают 3D-модели в Tinkercad и Fusion 360, а затем
+                воплощают их в жизнь на 3D-принтерах технопарка. Инженерное
+                мышление через визуальное творчество.
+              </p>
+              <ul class="tab-features" role="list">
+                <li>Основы 3D-моделирования в Tinkercad</li>
+                <li>Продвинутое проектирование в Fusion 360</li>
+                <li>Печать на профессиональных 3D-принтерах</li>
+                <li>Элементы промышленного дизайна</li>
+              </ul>
+              <a href="#courses" class="btn btn-primary">Смотреть курсы →</a>
+            </div>
+            <div class="tab-illustration tab-illustration--3d" aria-hidden="true">
+              <div class="tab-illus-card">
+                <div class="tab-illus-icon">🎨</div>
+                <div class="tab-illus-lines">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 3 — Популярные курсы (карточки)
+    ─────────────────────────────────────────── -->
+    <section class="courses" id="courses" aria-labelledby="coursesTitle">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Программы обучения</span>
+          <h2 class="section-title" id="coursesTitle">Популярные курсы</h2>
+          <p class="section-desc">Интенсивные и долгосрочные программы для всех уровней подготовки</p>
+        </header>
+
+        <div class="courses-grid" role="list">
+
+          <!-- Карточка 1 -->
+          <article class="course-card reveal-card" role="listitem"
+                   aria-label="Курс: Введение в робототехнику">
+            <div class="course-card__top">
+              <span class="course-badge course-badge--new">Хит</span>
+              <span class="course-icon" aria-hidden="true">🤖</span>
+            </div>
+            <div class="course-card__body">
+              <h3 class="course-title">Введение в робототехнику</h3>
+              <p class="course-desc">Создаём первых роботов на базе LEGO и Arduino. Программируем, соревнуемся, побеждаем.</p>
+              <ul class="course-meta" role="list">
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📅</span>
+                  <span>3 месяца</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">👤</span>
+                  <span>7–10 лет</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📍</span>
+                  <span>Очно, МГТУ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="course-card__footer">
+              <div class="course-price">
+                <span class="price-amount">4 900 ₽</span>
+                <span class="price-period">/ месяц</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-haspopup="dialog"
+                      data-course="Введение в робототехнику">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <!-- Карточка 2 -->
+          <article class="course-card reveal-card" role="listitem"
+                   aria-label="Курс: Python для подростков">
+            <div class="course-card__top">
+              <span class="course-badge course-badge--popular">Популярный</span>
+              <span class="course-icon" aria-hidden="true">🐍</span>
+            </div>
+            <div class="course-card__body">
+              <h3 class="course-title">Python для подростков</h3>
+              <p class="course-desc">Алгоритмы, структуры данных и первые программы на Python. Реальные проекты с первого занятия.</p>
+              <ul class="course-meta" role="list">
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📅</span>
+                  <span>6 месяцев</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">👤</span>
+                  <span>12–16 лет</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📍</span>
+                  <span>Очно + онлайн</span>
+                </li>
+              </ul>
+            </div>
+            <div class="course-card__footer">
+              <div class="course-price">
+                <span class="price-amount">5 500 ₽</span>
+                <span class="price-period">/ месяц</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-haspopup="dialog"
+                      data-course="Python для подростков">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <!-- Карточка 3 -->
+          <article class="course-card reveal-card" role="listitem"
+                   aria-label="Курс: 3D-моделирование и печать">
+            <div class="course-card__top">
+              <span class="course-badge course-badge--new">Новинка</span>
+              <span class="course-icon" aria-hidden="true">🖨️</span>
+            </div>
+            <div class="course-card__body">
+              <h3 class="course-title">3D-моделирование и печать</h3>
+              <p class="course-desc">От эскиза до готового изделия: проектируем в Tinkercad и печатаем на профессиональных принтерах.</p>
+              <ul class="course-meta" role="list">
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📅</span>
+                  <span>4 месяца</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">👤</span>
+                  <span>10–15 лет</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📍</span>
+                  <span>Очно, МГТУ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="course-card__footer">
+              <div class="course-price">
+                <span class="price-amount">5 200 ₽</span>
+                <span class="price-period">/ месяц</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-haspopup="dialog"
+                      data-course="3D-моделирование и печать">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <!-- Карточка 4 -->
+          <article class="course-card reveal-card" role="listitem"
+                   aria-label="Курс: Scratch — игры и анимация">
+            <div class="course-card__top">
+              <span class="course-badge course-badge--popular">Для малышей</span>
+              <span class="course-icon" aria-hidden="true">🎮</span>
+            </div>
+            <div class="course-card__body">
+              <h3 class="course-title">Scratch — игры и анимация</h3>
+              <p class="course-desc">Первое знакомство с программированием через создание игр и мультфильмов в визуальной среде Scratch.</p>
+              <ul class="course-meta" role="list">
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📅</span>
+                  <span>3 месяца</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">👤</span>
+                  <span>7–9 лет</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📍</span>
+                  <span>Очно + онлайн</span>
+                </li>
+              </ul>
+            </div>
+            <div class="course-card__footer">
+              <div class="course-price">
+                <span class="price-amount">3 900 ₽</span>
+                <span class="price-period">/ месяц</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-haspopup="dialog"
+                      data-course="Scratch — игры и анимация">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <!-- Карточка 5 -->
+          <article class="course-card reveal-card" role="listitem"
+                   aria-label="Курс: Веб-разработка">
+            <div class="course-card__top">
+              <span class="course-badge course-badge--new">Продвинутый</span>
+              <span class="course-icon" aria-hidden="true">🌐</span>
+            </div>
+            <div class="course-card__body">
+              <h3 class="course-title">Веб-разработка</h3>
+              <p class="course-desc">HTML, CSS, JavaScript — создаём настоящие сайты и web-приложения. Курс для тех, кто хочет стать разработчиком.</p>
+              <ul class="course-meta" role="list">
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📅</span>
+                  <span>8 месяцев</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">👤</span>
+                  <span>13–17 лет</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📍</span>
+                  <span>Онлайн</span>
+                </li>
+              </ul>
+            </div>
+            <div class="course-card__footer">
+              <div class="course-price">
+                <span class="price-amount">6 200 ₽</span>
+                <span class="price-period">/ месяц</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-haspopup="dialog"
+                      data-course="Веб-разработка">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <!-- Карточка 6 -->
+          <article class="course-card reveal-card" role="listitem"
+                   aria-label="Курс: Инженерный проект">
+            <div class="course-card__top">
+              <span class="course-badge course-badge--popular">Проектный</span>
+              <span class="course-icon" aria-hidden="true">⚙️</span>
+            </div>
+            <div class="course-card__body">
+              <h3 class="course-title">Инженерный проект</h3>
+              <p class="course-desc">Комплексный курс: от идеи до рабочего прототипа. Механика, электроника, программирование и презентация проекта.</p>
+              <ul class="course-meta" role="list">
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📅</span>
+                  <span>10 месяцев</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">👤</span>
+                  <span>14–17 лет</span>
+                </li>
+                <li class="course-meta__item">
+                  <span class="meta-icon" aria-hidden="true">📍</span>
+                  <span>Очно, МГТУ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="course-card__footer">
+              <div class="course-price">
+                <span class="price-amount">7 000 ₽</span>
+                <span class="price-period">/ месяц</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-haspopup="dialog"
+                      data-course="Инженерный проект">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+        </div><!-- /courses-grid -->
+
+        <div class="courses-cta">
+          <a href="#" class="btn btn-outline btn-lg">
+            Все программы обучения →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 4 — Преимущества
+    ─────────────────────────────────────────── -->
+    <section class="advantages" id="advantages" aria-labelledby="advantagesTitle">
+      <div class="container">
+        <header class="section-header section-header--light">
+          <span class="section-eyebrow section-eyebrow--light">Почему Инжинириум</span>
+          <h2 class="section-title section-title--light" id="advantagesTitle">
+            Наши преимущества
+          </h2>
+        </header>
+
+        <div class="advantages-grid">
+          <div class="advantage-item reveal-card">
+            <div class="advantage-icon" aria-hidden="true">🏛️</div>
+            <h3 class="advantage-title">Площадка МГТУ Баумана</h3>
+            <p class="advantage-desc">
+              Занятия проходят в лабораториях ведущего технического университета
+              страны. Дети вдыхают атмосферу настоящей науки.
+            </p>
+          </div>
+          <div class="advantage-item reveal-card">
+            <div class="advantage-icon" aria-hidden="true">👨‍🏫</div>
+            <h3 class="advantage-title">Преподаватели — практики</h3>
+            <p class="advantage-desc">
+              Наши педагоги — действующие инженеры и разработчики, студенты
+              и аспиранты Бауманки с реальным опытом в индустрии.
+            </p>
+          </div>
+          <div class="advantage-item reveal-card">
+            <div class="advantage-icon" aria-hidden="true">🏆</div>
+            <h3 class="advantage-title">Олимпиады и соревнования</h3>
+            <p class="advantage-desc">
+              Готовим к WRO, RoboCup, олимпиаде НТИ и другим ключевым
+              соревнованиям. Наши ученики — призёры всероссийского уровня.
+            </p>
+          </div>
+          <div class="advantage-item reveal-card">
+            <div class="advantage-icon" aria-hidden="true">🔬</div>
+            <h3 class="advantage-title">Современное оборудование</h3>
+            <p class="advantage-desc">
+              3D-принтеры, лазерные резаки, наборы Arduino, VR-оборудование —
+              дети работают с теми же инструментами, что и профессионалы.
+            </p>
+          </div>
+          <div class="advantage-item reveal-card">
+            <div class="advantage-icon" aria-hidden="true">📜</div>
+            <h3 class="advantage-title">Сертификаты и портфолио</h3>
+            <p class="advantage-desc">
+              По окончании курса ученик получает сертификат МГТУ и реальный
+              проект в портфолио — весомый плюс при поступлении.
+            </p>
+          </div>
+          <div class="advantage-item reveal-card">
+            <div class="advantage-icon" aria-hidden="true">🌟</div>
+            <h3 class="advantage-title">Небольшие группы</h3>
+            <p class="advantage-desc">
+              До 12 человек в группе — каждый ребёнок получает внимание
+              преподавателя и работает в своём темпе без стресса.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         СЕКЦИЯ 5 — Летний лагерь (промо-блок)
+    ─────────────────────────────────────────── -->
+    <section class="camp-promo reveal-card" aria-labelledby="campPromoTitle">
+      <div class="container camp-promo-inner">
+        <div class="camp-promo-content">
+          <span class="camp-promo-eyebrow">🏕️ Специальное предложение</span>
+          <h2 class="camp-promo-title" id="campPromoTitle">
+            Летний инженерный лагерь 2025
+          </h2>
+          <p class="camp-promo-desc">
+            Интенсивные смены по робототехнике, программированию и 3D-технологиям.
+            Июль — август, очно на территории МГТУ.
+          </p>
+          <div class="camp-promo-actions">
+            <a href="summer-camp.html" class="btn btn-primary btn-lg">
+              Подробнее о лагере →
+            </a>
+          </div>
+        </div>
+        <div class="camp-promo-visual" aria-hidden="true">
+          <div class="camp-promo-badge">
+            <span class="cpb-month">Июль</span>
+            <span class="cpb-dash">—</span>
+            <span class="cpb-month">Август</span>
+            <span class="cpb-year">2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="Инжинириум — на главную">
+          <span class="logo-badge">И</span>
+          <span class="logo-text">
+            <strong>Инжинириум</strong>
+            <span>МГТУ им. Н.Э. Баумана</span>
+          </span>
+        </a>
+        <p class="footer-tagline">
+          Детский технопарк, где инженерия становится профессией мечты.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-title">Обучение</h3>
+          <ul role="list">
+            <li><a href="#courses">Все курсы</a></li>
+            <li><a href="#directions">Робототехника</a></li>
+            <li><a href="#directions">Программирование</a></li>
+            <li><a href="#directions">3D-моделирование</a></li>
+            <li><a href="summer-camp.html">Летний лагерь</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-title">О нас</h3>
+          <ul role="list">
+            <li><a href="#advantages">Преимущества</a></li>
+            <li><a href="#">Педагоги</a></li>
+            <li><a href="#">Наши достижения</a></li>
+            <li><a href="#">Партнёры</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-title">Контакты</h3>
+          <address class="footer-contacts">
+            <p>
+              <span aria-label="Адрес">📍</span>
+              Москва, ул. 2-я Бауманская, д.&nbsp;5, стр.&nbsp;1, МГТУ
+            </p>
+            <p>
+              <a href="tel:+74951234567">
+                <span aria-label="Телефон">📞</span>
+                +7 (495) 123-45-67
+              </a>
+            </p>
+            <p>
+              <a href="mailto:info@injinerium.ru">
+                <span aria-label="Email">✉️</span>
+                info@injinerium.ru
+              </a>
+            </p>
+          </address>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">
+          &copy; 2025 Детский технопарк «Инжинириум МГТУ им. Н.Э. Баумана». Все права защищены.
+        </p>
+        <nav class="footer-legal" aria-label="Правовые ссылки">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Оферта</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       МОДАЛЬНОЕ ОКНО — Запись на курс
+  ═══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true"
+       aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-window">
+      <button class="modal-close" id="modalClose" aria-label="Закрыть окно">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M2 2L18 18M18 2L2 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="modal-eyebrow">🚀 Запись на курс</span>
+        <h2 class="modal-title" id="modalTitle">Оставьте заявку</h2>
+        <p class="modal-desc">
+          Мы свяжемся с вами в течение одного рабочего дня и подберём
+          подходящее время и группу.
+        </p>
+      </div>
+
+      <form class="modal-form" id="enrollForm" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="parentName">Имя родителя <span aria-hidden="true">*</span></label>
+          <input class="form-input" type="text" id="parentName" name="parentName"
+                 placeholder="Иван Иванов" required autocomplete="name" />
+          <span class="form-error" id="parentNameError" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="childName">Имя ребёнка <span aria-hidden="true">*</span></label>
+          <input class="form-input" type="text" id="childName" name="childName"
+                 placeholder="Алёша" required />
+          <span class="form-error" id="childNameError" role="alert"></span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="childAge">Возраст ребёнка <span aria-hidden="true">*</span></label>
+            <select class="form-input form-select" id="childAge" name="childAge" required>
+              <option value="" disabled selected>Выберите возраст</option>
+              <option value="7">7 лет</option>
+              <option value="8">8 лет</option>
+              <option value="9">9 лет</option>
+              <option value="10">10 лет</option>
+              <option value="11">11 лет</option>
+              <option value="12">12 лет</option>
+              <option value="13">13 лет</option>
+              <option value="14">14 лет</option>
+              <option value="15">15 лет</option>
+              <option value="16">16 лет</option>
+              <option value="17">17 лет</option>
+            </select>
+            <span class="form-error" id="childAgeError" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="courseSelect">Курс</label>
+            <select class="form-input form-select" id="courseSelect" name="courseSelect">
+              <option value="" disabled selected>Выберите курс</option>
+              <option value="robotics">Введение в робототехнику</option>
+              <option value="python">Python для подростков</option>
+              <option value="3d">3D-моделирование и печать</option>
+              <option value="scratch">Scratch — игры и анимация</option>
+              <option value="web">Веб-разработка</option>
+              <option value="project">Инженерный проект</option>
+              <option value="camp">Летний лагерь</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="phoneNumber">Телефон <span aria-hidden="true">*</span></label>
+          <input class="form-input" type="tel" id="phoneNumber" name="phoneNumber"
+                 placeholder="+7 (999) 000-00-00" required autocomplete="tel" />
+          <span class="form-error" id="phoneError" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="commentText">Комментарий</label>
+          <textarea class="form-input form-textarea" id="commentText" name="commentText"
+                    placeholder="Укажите удобное время, вопросы..." rows="3"></textarea>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" id="privacyCheck" name="privacyCheck" required />
+          <label for="privacyCheck">
+            Даю согласие на <a href="#">обработку персональных данных</a>
+          </label>
+          <span class="form-error" id="privacyError" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full btn-lg">
+          Отправить заявку
+        </button>
+      </form>
+
+      <div class="modal-success" id="modalSuccess" hidden>
+        <div class="success-icon" aria-hidden="true">✅</div>
+        <h3 class="success-title">Заявка принята!</h3>
+        <p class="success-desc">
+          Спасибо! Наш менеджер свяжется с вами в течение одного рабочего дня.
+        </p>
+        <button class="btn btn-outline" id="successClose">
+          Закрыть
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="js/global.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
